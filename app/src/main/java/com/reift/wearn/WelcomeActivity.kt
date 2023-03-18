@@ -11,7 +11,7 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_welcome)
         findViewById<MaterialButton>(R.id.btn_start_learning).setOnClickListener {
             startActivity(
-                Intent(this, MainActivity::class.java)
+                Intent(this, SubjectActivity::class.java)
             )
         }
     }

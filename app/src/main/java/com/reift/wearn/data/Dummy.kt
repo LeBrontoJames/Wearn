@@ -2,6 +2,19 @@ package com.reift.wearn.data
 
 object Dummy {
 
+    val listSubject = listOf(
+        "Physics",
+        "Mathematic",
+        "Programming",
+        "English",
+        "History",
+        "Politics",
+        "Art",
+        "Biology",
+        "Social",
+        "Chemistry"
+    )
+
     val listWearn = listOf(
         Watch(
             "Kenapa Einstein bilang kalau bulan tidak ada jika tidak ada yang melihat?",
