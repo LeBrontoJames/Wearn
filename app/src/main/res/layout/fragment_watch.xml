@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingHorizontal="28dp"
+    android:clipToPadding="false"
+    tools:context=".WatchFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="-29dp"
+        android:layout_marginEnd="-29dp">
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/yt_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@color/black"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:rotation="180"
+            android:background="@drawable/shadow_home"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/shadow_home"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_caption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Theory of Relativity? Whatis Relativity?"
+        android:textSize="14sp"
+        android:fontFamily="@font/lexend_regular"
+        android:layout_marginBottom="48dp"
+        android:textColor="@color/white"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toStartOf="@id/tv_helpful_amount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_creator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="\@reihanfatilla"
+        android:textSize="15sp"
+        android:fontFamily="@font/lexend_semibold"
+        android:textColor="@color/white"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toStartOf="@id/tv_helpful_amount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_caption"/>
+
+    <TextView
+        android:id="@+id/tv_helpful_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="50k"
+        android:textSize="12sp"
+        android:fontFamily="@font/lexend_regular"
+        android:layout_marginBottom="48dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ToggleButton
+        android:id="@+id/btn_helpfuk"
+        android:layout_width="24dp"
+        android:layout_height="34dp"
+        android:background="@drawable/ic_helpful_selector"
+        app:layout_constraintBottom_toTopOf="@id/tv_helpful_amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_helpful_amount"
+        android:layout_marginBottom="12dp"
+        android:textOff=" "
+        android:textOn=" " />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
